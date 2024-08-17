@@ -44,7 +44,7 @@ function App() {
             <input name='email' type="email" placeholder="Enter your email address" required onChange={handleChange} />
           </div>
           <div className="input-container">
-            <input name='password' type="password" placeholder="Enter your password" required onChange={handleChange} />
+            <input name='password' type="text" placeholder="Enter your password" required onChange={handleChange} />
             <span className="forgot-password">Forgot password?</span>
           </div>
           <p className='message'>{message}</p>
